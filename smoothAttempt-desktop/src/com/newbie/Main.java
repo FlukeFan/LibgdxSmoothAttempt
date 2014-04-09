@@ -8,8 +8,10 @@ public class Main {
 		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
 		cfg.title = "smoothAttempt";
 		cfg.useGL20 = false;
-		cfg.width = 480;
-		cfg.height = 320;
+		cfg.vSyncEnabled = true;
+		cfg.width = 800;
+		cfg.height = 600;
+		//cfg.fullscreen = true; // much better when full screen, but still not fully smooth :-(
 		
 		new LwjglApplication(new SmoothAttempt(), cfg);
 	}
